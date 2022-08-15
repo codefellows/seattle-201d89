@@ -10,5 +10,5 @@
 * Why - Its how we publish our labs for grading.
   * A really good way of saving things that worked, while also making upgrades / adjustments.
 * `add`- stages files and folders to save in an update.
-* `commit`
-* `push`
+* `commit`- save all updates to a new version.
+* `push`- publishes current version to the cloud.

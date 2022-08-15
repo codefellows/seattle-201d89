@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <!-- Things the browser needs to know about the things that you see -->
+  <head>
+    <title>Class 01</title>
+    <!-- Why add this here? -->
+    <style>
+      /* selector (what elements are we selecting) */
+      h1 { /* list of attribute / properties to style */
+        color: red;/* value */
+      }
+      p {
+        color: blue;
+      }
+      li {
+        color: orange;
+      }
+    </style>
+  </head>
+
+  <!-- Everything that you see -->
+  <body>
+    <h1 style="background-color: grey;" >HTML Tags!</h1>
+    <p>This is paragraph text</p>
+    <!-- a box for content to be added to -->
+    <div>
+      <!-- unordered list -->
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+      </ul>
+    </div>
+    <script>
+      // our first js expression - any valid js code, that returns / evaluates into a value
+      let name = prompt("What is your name?"); // function that asks the user for input.
+      console.log("Your name is : " + name);
+      // this becomes a statement when do "something" with the value.
+      alert("Your name is : " + name);
+    </script>
+  </body>
+</html>
