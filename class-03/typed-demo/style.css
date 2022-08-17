@@ -1,0 +1,23 @@
+h1 {
+  margin: 10px auto 10px auto;
+  width: 150px;
+  text-align: center;
+}
+
+#app-head {
+  /* width: calc(100vw - 15px); */
+  padding: 20px;
+  border: thin solid black;
+}
+
+#nav {
+  width: 150px;
+  height: calc(100vh - 80px);
+  border: thin solid red;
+}
+
+li {
+  margin: 10px 5px;
+  padding: 5px;
+  border: thin solid blue;
+}

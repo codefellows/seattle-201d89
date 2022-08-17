@@ -1,0 +1,58 @@
+h1{
+    background-color: rgb(110, 184, 158);
+    font-size: 60px;
+    text-align: center;
+    border: 5px solid;
+    border-color: rgb(76, 139, 117);
+    border-style: solid;
+    margin: -8px;
+    padding: 50px;
+}
+
+body{
+    background-color: rgb(110, 184, 158);
+}
+
+#id {
+
+}
+
+.classname {
+
+}
+
+.user_message{
+    font-weight: bolder;
+    color: rgb(6, 61, 6);
+    font-style: italic;
+    border: 3px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: rgb(76, 139, 117);
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align:start;
+    background-color: rgb(141, 205, 183);
+    margin: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.bio{
+    border: 3px;
+    border-top: 0px;
+    border-style: solid;
+    background-color: rgb(110, 184, 158);
+    border-color:rgb(76, 139, 117);
+    margin-right: 600px;
+    margin-left: -8px;
+    margin-top: -8px;
+    color: rgb(25, 30, 34);
+    font-size: larger;
+    padding: 10px;
+    text-align: start;
+    display: inline-block;
+
+}
