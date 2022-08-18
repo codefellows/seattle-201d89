@@ -1,0 +1,31 @@
+
+
+h1, h2 {
+    color:blue;
+    background-color: yellow;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+body {
+    background-color: green;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Biography, .ProfessionalBackground, .Education, .Goals, .TopTenList {
+    display:block;
+    height: 80%;
+    width: 80%;
+    background-color: green;
+    margin: auto;
+    margin: 10px 5px;
+    padding: 10px;
+    border: solid yellow;
+    text-align: center;
+}
