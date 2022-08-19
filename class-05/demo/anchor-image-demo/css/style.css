@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Just+Another+Hand|Wire+One|Tulpen+One|Eczar);
-
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
 
 
 /*font-family: 'Wire One', sans-serif;
@@ -19,6 +19,23 @@ p {
   color: blue;
 }
 
+.image-container {
+  background-color: grey;
+  display: inline-block;
+  max-width: 500px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 16px;
+  margin: 12px;
+  border-radius: 10px;
+}
+
+.image-container P {
+  color: #fefefe;
+font-family: 'Bebas Neue', cursive;}
+
+.image-container img {
+  width: 100%;
+}
 
 #preface h1 {
   font-family: 'Eczar', serif;
