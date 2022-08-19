@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.image-container {
+  display: inline-block;
+  max-width: 500px;
+  margin: 16px;
+  padding: 12px;
+  border: thin solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.image-container h2 {
+  /* text-align: center; */
+  /* width: 50%;
+  display: inline-block;
+  margin: 0 auto; */
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  line-height: 50px;
+  color: red;
+}
+
+.image-container p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: grey;
+}
+
+body {
+  background-color: grey;
+}
+
+img {
+  width: 300px;
+  float: right;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
