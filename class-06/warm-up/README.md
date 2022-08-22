@@ -2,7 +2,7 @@
 
 Create a List element using HTMl and CSS.  Try to get your component to look as close to the provided design:
 
-![List Element](/assets/list_element.png)
+![List Element](./assets/list_element.png)
 
 Use the provided icon: `./assets/icons/icon.svg`, and color values to complete your list element.
 
