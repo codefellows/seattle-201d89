@@ -17,7 +17,8 @@ What went well? What is difficult?
 
 * Functions and loops are still on the struggle bus.
   * Following along with the demo code, not going as planned.
-  * Question 5 (Multiply number in an array).  
+  * Question 5 (Multiply number in an array).
+  * See [Jacob's repo](https://github.com/JacobKnaack/clas05-lab) for Question 5 and 6.
 
 ## JS Fundamentals: Objects
 
