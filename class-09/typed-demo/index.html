@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Forms</title>
+</head>
+<body>
+  <form id="pokemon-form">
+    <fieldset>
+      <legend>Create a New Pokemon</legend>
+      <section class="input-section">
+        <label>Name</label>
+        <input name="pokemon_name" type="text">
+      </section>
+      <section class="input-section">
+        <label>Type</label>
+        <input name="pokemon_type" type="text">
+      </section>
+      <section class="input-section">
+        <label>Health</label>
+        <input name="pokemon_health" type="number">
+      </section>
+      <button type="submit">Create New Pokemon</button>
+    </fieldset>
+  </form>
+  <section>
+    <ul id="pokedex">
+      <!-- this is where we append Pokemon -->
+    </ul>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
