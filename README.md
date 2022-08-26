@@ -113,7 +113,7 @@ Upon satisfactory completion of this course, a student should be able to:
 | 12 | 3rd Party Libraries and Documentation | Integrating Chart.js |
 | 13 | Application State with Local Storage API | Storing/Retrieving data from local storage |
 | 14 | Psyhological Safety | Exploring an existing code base |
-| 15 | Project Kickoff | Merge conflict practice |
+| 15 | Project Kickoff & Team Agreements | Merge conflict practice |
 
 ### Module 4 - Final Project
 
