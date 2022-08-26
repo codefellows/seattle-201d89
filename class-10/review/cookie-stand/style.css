@@ -1,0 +1,159 @@
+body {
+  background-color: rgb(244, 216, 184);
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+}
+
+header {
+  display: block;
+  border: 2px solid rgb(70, 27, 17);
+  background-color: rgb(247, 228, 202);
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#header-salmon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 30%;
+  height: 30%;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(70, 27, 17);
+  font-family: 'Manrope', sans-serif;
+  padding: 15px;
+  margin: auto;
+  width: 75%;
+}
+
+.sub-banner {
+  display: flex;
+  background-color: rgb(247, 228, 202);
+  border: 2px solid rgb(70, 27, 17);
+  margin: 10px auto;
+  align-items: center;
+  justify-content: space-evenly;
+  object-fit: cover;
+  width: 95%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#three-fish {
+  max-width: 100%;
+  max-height: 100%;
+  mix-blend-mode: multiply;
+}
+
+#cutter {
+  border-radius: 50%;
+  border: 2px solid rgb(70, 27, 17);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#shirt {
+  max-width: 100%;
+  max-height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.featured-section {
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 95%;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 2px solid rgb(70, 27, 17);
+  background-color: rgb(247, 228, 202);
+  font-family: 'Manrope', sans-serif;
+  color: rgb(70, 27, 17);
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 20px;  
+  text-align: center;
+}
+
+.locations {
+  display: inline-block;
+  border: 2px solid rgb(70, 27, 17);
+  padding-right: 20px;
+  height: auto;
+  width: auto;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  border-radius: 5px;
+}
+
+.scroll-box {
+  padding: 0px 20px;
+}
+
+.h2locations {
+  border-top: 2px solid rgb(70, 27, 17);
+}
+
+table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 101.5%;
+  padding: 10px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  align-items: center;
+  background-color: rgb(247, 228, 202);
+  color: rgb(70, 27, 17);
+}
+
+.footer-banner {
+  display: flex;
+  background-color: rgb(247, 228, 202);
+  border: 2px solid rgb(70, 27, 17);
+  margin: 10px auto;
+  align-items: center;
+  justify-content: space-evenly;
+  object-fit: cover;
+  width: 95%;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#family {
+  border-radius: 20px;
+  border: 2px solid rgb(70, 27, 17);
+  max-width: 100%;
+  max-height: 100%;
+  mix-blend-mode:normal;
+}
+
+#chinook {
+  max-width: 100%;
+  max-height: 100%;
+  mix-blend-mode: multiply;
+}
+
+#frosted {
+  border-radius: 20px;
+  border: 2px solid rgb(70, 27, 17);
+  max-width: 100%;
+  max-height: 100%;
+  mix-blend-mode:normal;
+}
+
+
+

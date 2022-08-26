@@ -1,0 +1,159 @@
+header {
+  display: block;
+  border: 2px solid rgb(70, 27, 17);
+  background-color: rgb(247, 228, 202);
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#header-salmon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 30%;
+  height: 30%;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(70, 27, 17);
+  font-family: 'Manrope', sans-serif;
+  padding: 15px;
+  margin: auto;
+  width: 75%;
+}
+
+table {
+  color: rgb(70, 27, 17);
+  background-color: rgb(224, 192, 152);
+  border: 1px solid rgb(70, 27, 17);
+  padding: 20px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+th {
+  border: thin solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(244, 216, 184);
+
+}
+
+td {
+  border: thin solid black;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: rgb(247, 228, 202);
+}
+
+body {
+  background-color: rgb(244, 216, 184);
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+}
+
+p {
+  margin-top: 45px;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  color: rgb(105, 47, 34);
+  padding-bottom: 15px;
+}
+
+form {
+  border-radius: 5px;
+  background-color: rgb(224, 192, 152);
+  padding: 15px;
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid rgb(70, 27, 17);
+
+}
+
+fieldset {
+  background-color: rgb(247, 228, 202);
+}
+
+legend {
+  color: rgb(70, 27, 17);
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  background-color: rgb(244, 216, 184);
+  border: thin solid rgb(70, 27, 17);
+  padding: 12px;
+  border-radius: 7px;
+
+}
+
+.locationLabel {
+  display: block;
+  text-align: center;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: medium;
+  color: rgb(70, 27, 17);
+  font-weight: bold;
+}
+
+
+input[type=text] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: medium;
+  background-color: #faf6f3;
+}
+
+div {
+  display: inline-block;
+  width: 350px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.numbersLabel {
+  display: inline-block;
+  text-align: left;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: medium;
+  color: rgb(70, 27, 17);
+  font-weight: bold;
+}
+
+input[type=number] {
+  width: 82%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: medium;
+  background-color: #faf6f3;
+}
+
+button {
+  margin-top: 6px;
+  background-color: rgb(70, 27, 17);
+  color: white;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+nav {
+  margin-top: 20px;
+}

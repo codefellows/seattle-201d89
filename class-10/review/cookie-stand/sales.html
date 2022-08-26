@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sales Data</title>
+  <link rel="stylesheet" href="style-sales.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./assets/images/salmon.png" id="header-salmon">
+    <h1>Pat's Salmon Cookies Sales Data</h1>
+  </header>
+  <main>
+    <table id="data">
+      <thead id="hoursRow">
+        <tr>
+          <th colspan="16">Daily Cookie Sales By The Hour</th>
+        </tr>
+      </thead>
+      <tbody id="mainInfo"></tbody>
+      <tfoot id="totalsRow"></tfoot>
+    </table>
+  <section>
+    <form id="cookies-form">
+      <fieldset>
+        <legend>Add New Cookie Store Location</legend>
+          <label class="locationLabel">Location Name:</label>
+          <input type="text" name="location" required="required">
+        <div>
+          <label class="numbersLabel">Min. Expected Customers per Hour:</label>
+          <input type="number" name="minCust" required="required">
+        </div>
+        <div>
+          <label class="numbersLabel">Max. Expected Customers per Hour:</label>
+          <input type="number" name="maxCust" required="required">
+        </div>
+        <div>
+          <label class="numbersLabel">Est. Average Cookies Per Customer:</label>
+          <input type="number" step="any" name="avgCookies" required="required">
+        </div>
+        <br>
+          <button type="submit" onclick="alert('Thank you for your submission!')">Submit Location</button>
+      </fieldset>
+    </form>
+  </section>
+    <nav>
+      <a href="index.html">Take Me Back!</a>
+    </nav>
+
+  </main>
+</body>
+<script src="app.js"></script>
+</html>
