@@ -79,23 +79,26 @@ function renderChart() {
     return;
   }
 
-  const labels = [];
-  const viewsDataset = {};
-  const clicksDataset = {};
+  const labels = []; // Fill with `name` of each goat
+  const viewsDataset = {
+    label: "Times shown",
+    data: [], // Fill with views
+    backgroundColor: ["rgba(255, 0, 0, 0.8)"],
+  };
+  const clicksDataset = {
+    label: "Times voted",
+    data: [], // Fill with clicks
+    backgroundColor: ["rgba(0, 0, 255, 0.8)"],
+  };
 
-  //   {
-  //     label: '# of Votes',
-  //     data: [12, 19, 3, 5, 2, 3, 9, 4, 6 ],
-  //     backgroundColor: [
-  //       'rgba(255, 99, 132, 0.2)',
-  //       'rgba(54, 162, 235, 0.2)',
-  //     ],
-  //     borderColor: [
-  //       'rgba(255, 99, 132, 1)',
-  //       'rgba(54, 162, 235, 1)',
-  //     ],
-  //     borderWidth: 1
-  //   }
+  // Loop all goats, get the properties, put them in the places
+  for (let i = 0; i < Goat.allGoatsArray.length; i++) {
+    let goat = Goat.allGoatsArray[i];
+
+    labels[i] = goat.name;
+    viewsDataset.data[i] = goat.views;
+    clicksDataset.data[i] = goat.clicks;
+  }
 
   const myChart = new Chart(ctx, {
     type: "bar",
