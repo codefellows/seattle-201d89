@@ -67,7 +67,7 @@ section img:hover {
 /* once voting ends */
 section.no-voting img:hover {
   border: 5px solid transparent;
-  cursor: none;
+  cursor: wait;
 }
 
 
