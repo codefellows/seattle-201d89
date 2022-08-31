@@ -49,9 +49,11 @@ function renderGoats() {
   Goat.allGoatsArray[goat2].views++;
 }
 
+goatContainer.addEventListener("click", handleGoatClick);
+
 function handleGoatClick(event) {
   if (event.target === goatContainer) {
-    alert('Please click on an image');
+    alert("Please click on an image");
   }
   clicks++;
   let clickGoat = event.target.alt;
@@ -61,10 +63,10 @@ function handleGoatClick(event) {
       break;
     }
   }
-  
+
   if (clicks === maxClicksAllowed) {
-    goatContainer.removeEventListener('click', handleGoatClick);
-    goatContainer.className = 'no-voting';
+    goatContainer.removeEventListener("click", handleGoatClick);
+    goatContainer.className = "no-voting";
     renderChart();
   } else {
     renderGoats();
@@ -72,70 +74,62 @@ function handleGoatClick(event) {
 }
 
 function renderChart() {
-  let goatNames = [];
-  let goatLikes = [];
-  let goatViews = [];
-  for (let i = 0; i < Goat.allGoatsArray.length; i++) {
-    goatNames.push(Goat.allGoatsArray[i].name);
-    goatLikes.push(Goat.allGoatsArray[i].clicks);
-    goatViews.push(Goat.allGoatsArray[i].views);
+  const ctx = document.getElementById("myChart").getContext("2d");
+  if (!ctx) {
+    return;
   }
 
-  /* refer to Chart.js > Chart Types > Bar Chart: 
-  https://www.chartjs.org/docs/latest/charts/bar.html 
-  and refer to Chart.js > Getting Started > Getting Started:
-  https://www.chartjs.org/docs/latest/getting-started/ */
-  const data = {
-    labels: goatNames,
-    datasets: [{
-      label: 'Likes',
-      data: goatLikes,
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)'
-      ],
-      borderColor: [
-        'rgb(255, 99, 132)'
-      ],
-      borderWidth: 1
-    },
-    {
-      label: 'Views',
-      data: goatViews,
-      backgroundColor: [
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgb(255, 159, 64)'
-      ],
-      borderWidth: 1
-    }]
+  const labels = []; // Fill with `name` of each goat
+  const viewsDataset = {
+    label: "Times shown",
+    data: [], // Fill with views
+    backgroundColor: ["rgba(255, 0, 0, 0.8)"],
+  };
+  const clicksDataset = {
+    label: "Times voted",
+    data: [], // Fill with clicks
+    backgroundColor: ["rgba(0, 0, 255, 0.8)"],
   };
 
-  const config = {
-    type: 'bar',
-    data: data,
+  // Loop all goats, get the properties, put them in the places
+  for (let i = 0; i < Goat.allGoatsArray.length; i++) {
+    let goat = Goat.allGoatsArray[i];
+
+    labels[i] = goat.name;
+    viewsDataset.data[i] = goat.views;
+    clicksDataset.data[i] = goat.clicks;
+  }
+
+  const myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: labels, // product names
+      datasets: [
+        viewsDataset, // Dataset for number of clicks
+        clicksDataset, // Dataset for number of clicks
+      ],
+    },
     options: {
       scales: {
         y: {
-          beginAtZero: true
-        }
-      }
+          beginAtZero: true,
+        },
+      },
     },
-  };
-  let canvasChart = document.getElementById('myChart');
-  const myChart = new Chart(canvasChart, config);
+  });
+
+  console.log(myChart);
 }
 
 // executable code
 
-new Goat('Cruising Goat', './images/cruisin-goat.jpg');
-new Goat('Float Your Goat', './images/float-your-goat.jpg');
-new Goat('Goat Out of Hand', './images/goat-out-of-hand.jpg');
-new Goat('Kissing Goat', './images/kissing-goat.jpg');
-new Goat('Sassy Goat', './images/sassy-goat.jpg');
-new Goat('Smiling Goat', './images/smiling-goat.jpg');
-new Goat('Sweater Goat', './images/sweater-goat.jpg');
+new Goat("Cruising Goat", "./images/cruisin-goat.jpg");
+new Goat("Float Your Goat", "./images/float-your-goat.jpg");
+new Goat("Goat Out of Hand", "./images/goat-out-of-hand.jpg");
+new Goat("Kissing Goat", "./images/kissing-goat.jpg");
+new Goat("Sassy Goat", "./images/sassy-goat.jpg");
+new Goat("Smiling Goat", "./images/smiling-goat.jpg");
+new Goat("Sweater Goat", "./images/sweater-goat.jpg");
 
 renderGoats();
 
-goatContainer.addEventListener('click', handleGoatClick);
