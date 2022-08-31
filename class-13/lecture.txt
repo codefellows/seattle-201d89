@@ -1,0 +1,48 @@
+Currently,after putting in orders, if we refresh the page
+we lose old orders.
+
+We _want_ the data to persist on reload (or close and reopen)
+  1. Store the orders when they're made
+  2. Load (retrieve) orders when the page first loads
+
+LocalStorage
+  Like a cache (is a cache?) A place to store some information
+  Close to where we need it in the network to retrieve them quickly
+
+Allows site a key/value pair with no expiration date
+  site: The entire subdomain (per browser)
+  key/value pair: A value and a name assigned to it (some way to get it back)
+       The key is how you reference that value
+       Like: Objects! CSS Properties (very limited)
+             Constructor functions (setting properties on this)
+             The variables of a program or function?
+       localStorage is a string / string key / value pair
+  no expiration date: Recall any time (as long as it hasn't been manually deleted)
+
+If I turn off my computer, does localStorage stay around?
+  Yes! It is a file on disk
+... do Cookies stay around?
+  Usually, because cookies are shared between browser and server
+... does memory (variables, etc) stay around?
+  No, those go away when the program ends
+
+Using localStorage:
+
+localStorage.getItem(name, value);
+localStorage.setItem(name, value);
+localStorage['complex name'] = value;
+localStorage['complex name'];
+localStorage.simpleName = value;
+localStorage.simpleName;
+
+localStorage.removeItem(name);
+delete localStorage['favorite job'];
+delete localStorage.simpleName;
+localStorage.clear();
+
+Serialization & Deserialization (serde)
+  Turn any value (string, number, object, array, ...) into a string
+  And get an equivalent object (string, object, ...) back from that string
+
+Serialize with `JSON.stringify`
+Deserialize with `JSON.parse`
